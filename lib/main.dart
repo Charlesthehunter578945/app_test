@@ -5,7 +5,8 @@ void main() {
     const MaterialApp(
       home: Center(
         child: Text(
-          'Hola Mundo',
+          'Yellow Guorld',
+          style: TextStyle(color: Colors.blue),
         ),
       ),
     ),
