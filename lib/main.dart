@@ -6,7 +6,12 @@ void main() {
       home: Center(
         child: Text(
           'Yellow Guorld',
-          style: TextStyle(color: Colors.blue),
+          style: TextStyle(
+              color: Colors.blue,
+              decoration: TextDecoration.none,
+              fontSize: 32,
+              fontWeight: FontWeight.bold,
+              backgroundColor: Colors.black),
         ),
       ),
     ),
