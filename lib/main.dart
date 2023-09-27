@@ -3,23 +3,17 @@ import 'package:flutter/material.dart';
 import './screens/firstpg.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Hello appBar'),
-        ),
-        body: const Center(
-          //Hola esto es un comentariov
-          child: Text(
-            'Hello body',
-            style: TextStyle(
-              fontSize: 24,
-              color: Colors.blue,
-            ),
-          ),
-        ),
-      ),
-    ),
-  );
+  const MainApp({super.key});
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      title: 'Multiple Pages',
+      home: FirstPage(),
+    );
+  }
 }
